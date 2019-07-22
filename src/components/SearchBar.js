@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 
+
 class SearchBar extends Component {
 
 state= {
@@ -11,7 +12,7 @@ handleChange = event => {
 }
 handleSubmit = event => {
     event.preventDefault()
-    
+
     this.props.onSubmit(this.state.term)
 }
 
